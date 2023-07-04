@@ -3,15 +3,21 @@ import Header from "../components/Header/Header";
 import "../styles/App.css";
 import Footer from "../components/Footer/Footer";
 import Hero from "../components/UI/Hero";
+import Contact from "./Contact/Contact";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="bg-gray-50">
+    <BrowserRouter>
       <Header />
-      <main>
-        <Hero />
-      </main>
+      <Routes>
+        <Route path="/home" element={<Hero />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="blogs" element={<Blogs />} />
+          
+          <Route path="*" element={<NoPage />} /> */}
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MdDarkMode, MdMenu } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [nav, setNav] = useState(true);
@@ -11,40 +12,40 @@ export default function Header() {
           <div className="hidden md:flex">
             <ul className="flex items-centers gap-9">
               <li>
-                <a
+                <Link
                   className="bg-white shadow-lg border-spacing-3 text-smallTextColor font-[500] rounded-[9px] 
                   py-2 px-2 hover:bg-gray-200 duration-500"
-                  href="#home"
+                  to="/home"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="bg-white shadow-lg border-spacing-3 text-smallTextColor font-[500] rounded-[9px] 
                   py-2 px-2 hover:bg-gray-200 duration-500"
-                  href="#project"
+                  to="/"
                 >
                   Project
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="bg-white shadow-lg border-spacing-3 text-smallTextColor font-[500] rounded-[9px] 
                   py-2 px-2 hover:bg-gray-200 duration-500"
-                  href="#contact"
+                  to="/contact"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="bg-white shadow-lg border-spacing-3 text-smallTextColor font-[500] rounded-[9px] 
                   py-2 px-2 hover:bg-gray-200 duration-500"
-                  href="#resume"
+                  to="/"
                 >
                   Resume
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
