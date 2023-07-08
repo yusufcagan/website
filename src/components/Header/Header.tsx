@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [nav, setNav] = useState(true);
   return (
-    <header className="w-full h-[8s0px] leading-[80px] flex items-center">
+    <header className="bg-zinc-100 w-full h-[8s0px] leading-[80px] flex items-center">
       <div className="container">
         <div className="flex items-center justify-between">
           {/*========menu===*/}
