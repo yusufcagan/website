@@ -5,6 +5,7 @@ import Footer from "../components/Footer/Footer";
 //import Hero from "../components/UI/Hero";
 import Home from "./Home/Home";
 import Contact from "./Contact/Contact";
+import Project from "./Project/Project";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -12,11 +13,10 @@ export default function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        {/* <Route path="blogs" element={<Blogs />} />
-          
-          <Route path="*" element={<NoPage />} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="project" element={<Project />} />
+        {/*<Route path="*" element={<NoPage />} /> */}
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   const [nav, setNav] = useState(true);
+
   return (
     <header className="bg-zinc-100 w-full h-[8s0px] leading-[80px] flex items-center">
       <div className="container">
@@ -15,7 +16,7 @@ export default function Header() {
                 <Link
                   className="bg-white shadow-lg border-spacing-3 text-smallTextColor font-[500] rounded-[9px] 
                   py-2 px-2 hover:bg-gray-200 duration-500"
-                  to="/home"
+                  to="/"
                 >
                   Home
                 </Link>
@@ -24,7 +25,7 @@ export default function Header() {
                 <Link
                   className="bg-white shadow-lg border-spacing-3 text-smallTextColor font-[500] rounded-[9px] 
                   py-2 px-2 hover:bg-gray-200 duration-500"
-                  to="/"
+                  to="project"
                 >
                   Project
                 </Link>
@@ -33,7 +34,7 @@ export default function Header() {
                 <Link
                   className="bg-white shadow-lg border-spacing-3 text-smallTextColor font-[500] rounded-[9px] 
                   py-2 px-2 hover:bg-gray-200 duration-500"
-                  to="/contact"
+                  to="contact"
                 >
                   Contact
                 </Link>
@@ -77,40 +78,40 @@ export default function Header() {
               >
                 <ul>
                   <li>
-                    <a
+                    <Link
                       className="bg-white shadow-lg border-spacing-3 text-smallTextColor font-[500] rounded-[9px] 
                   py-2 px-2 hover:bg-gray-200 duration-500"
-                      href="#home"
+                      to="/home"
                     >
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="bg-white shadow-lg border-spacing-3 text-smallTextColor font-[500] rounded-[9px] 
                   py-2 px-2 hover:bg-gray-200 duration-500"
-                      href="#project"
+                      to="/project"
                     >
                       Project
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="bg-white shadow-lg border-spacing-3 text-smallTextColor font-[500] rounded-[9px] 
                   py-2 px-2 hover:bg-gray-200 duration-500"
-                      href="#contact"
+                      to="/contact"
                     >
                       Contact
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="bg-white shadow-lg border-spacing-3 text-smallTextColor font-[500] rounded-[9px] 
                   py-2 px-2 hover:bg-gray-200 duration-500"
-                      href="#resume"
+                      to="/resume"
                     >
                       Resume
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

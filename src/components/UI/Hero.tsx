@@ -49,7 +49,7 @@ export default function Hero() {
         </div>
         <div className="md:basis-1/3 mt-10 sm:mt-0">
           <figure>
-            <img src={HeroImg} alt=""/>
+            <img src={HeroImg} alt="" />
           </figure>
         </div>
       </div>

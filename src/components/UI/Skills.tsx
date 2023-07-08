@@ -1,5 +1,5 @@
 import React from "react";
-import Languages from "../../data/data";
+import { Languages } from "../../data/data";
 
 export default function Skills() {
   return (

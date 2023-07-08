@@ -9,7 +9,7 @@ import Nodejs from "../assets/nodejs.png";
 
 const Languages = [
   {
-    name: "React",
+    name: "React.js",
     svg: React,
   },
   {
@@ -37,9 +37,31 @@ const Languages = [
     svg: Tailwind,
   },
   {
-    name: "NodeJs",
+    name: "Node.js",
     svg: Nodejs,
   },
 ];
 
-export default Languages;
+const project = [
+  {
+    name: "React Native",
+    description:
+      "Lorem ipsum let amet.Lorem ipsum let amet.Lorem ipsum let amet.Lorem ipsum let amet.Lorem ipsum let amet. ",
+    image: "https://picsum.photos/512/512",
+    link: "//yusufcagan.dev",
+  },
+  {
+    name: "React.js",
+    description: "Lorem ipsum let amet.Lorem ipsum let amet.Lorem ",
+    image: "https://picsum.photos/512/512",
+    link: "//yusufcagan.dev",
+  },
+  {
+    name: "Javascrpit",
+    description: "Lorem ipsum let amet.Lorem ipsum let amet.Lorem ",
+    image: "https://picsum.photos/512/512",
+    link: "//yusufcagan.dev",
+  },
+];
+
+export { Languages, project };
