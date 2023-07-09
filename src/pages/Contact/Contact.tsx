@@ -38,62 +38,66 @@ export default function Contact() {
   };
 
   return (
-    <div className="container mx-auto py-10">
-      <h1 className="text-3xl font-bold mb-6 text-center">Contact to Me</h1>
-      <form className="max-w-lg mx-auto">
-        <div className="mb-4">
-          <label className="block mb-2 font-medium" htmlFor="name">
-            Name
-          </label>
-          <input
-            className="w-full px-4 py-2 border border-gray-300 rounded"
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block mb-2 font-medium" htmlFor="email">
-            Email
-          </label>
-          <input
-            className="w-full px-4 py-2 border border-gray-300 rounded"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block mb-2 font-medium" htmlFor="message">
-            Message
-          </label>
-          <textarea
-            className="w-full px-4 py-2 border border-gray-300 rounded"
-            id="message"
-            name="message"
-            placeholder="Type your message here..."
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            //rows="5"
-            required
-          ></textarea>
-        </div>
-        <button
-          onClick={sendMail}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-          type="button"
-        >
-          Submit
-        </button>
-      </form>
+    <div className="flex dark:bg-zinc-700">
+      <div className="container mx-auto py-12">
+        <h1 className="text-3xl font-bold mb-6 text-center mt-12">
+          Contact to Me
+        </h1>
+        <form className="max-w-lg mx-auto">
+          <div className="mb-4">
+            <label className="block mb-3 font-medium" htmlFor="name">
+              Name
+            </label>
+            <input
+              className="w-full px-4 py-2 border border-gray-300 dark:bg-zinc-400 dark:placeholder:text-white rounded"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block mb-3 font-medium" htmlFor="email">
+              Email
+            </label>
+            <input
+              className="w-full px-4 py-2 border border-gray-300 dark:bg-zinc-400  dark:placeholder:text-white rounded"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block mb-3 font-medium" htmlFor="message">
+              Message
+            </label>
+            <textarea
+              className="w-full px-4 py-2 border border-gray-300 dark:bg-zinc-400 rounded dark:placeholder:text-white"
+              id="message"
+              name="message"
+              placeholder="Type your message here..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              //rows="5"
+              required
+            ></textarea>
+          </div>
+          <button
+            onClick={sendMail}
+            className="bg-blue-500 text-white px-4 py-2 my-3 rounded hover:bg-blue-600"
+            type="button"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

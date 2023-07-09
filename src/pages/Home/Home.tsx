@@ -4,11 +4,11 @@ import Skills from "../../components/UI/Skills";
 
 export default function Home() {
   return (
-    <div>
-      <div className="bg-zinc-100">
+    <div className="dark:bg-zinc-700">
+      <div className="bg-zinc-100 dark:bg-zinc-800">
         <Hero />
       </div>
-      <div className="m-10">
+      <div className="flex justify-center bg-white dark:bg-zinc-700">
         <Skills />
       </div>
     </div>

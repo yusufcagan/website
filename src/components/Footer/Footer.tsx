@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-100 text-white py-4">
+    <footer className="bg-zinc-100 dark:bg-zinc-800 text-white py-4">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <ul className="flex space-x-4">
@@ -33,10 +33,14 @@ export default function Footer() {
             </li>
           </ul>
           <div className="text-center">
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-600 dark:text-gray-400">
               © 2023 My Website. Yusuf ÇAĞAN.
             </p>
-            <p className="text-sm text-gray-600">yusufcagan@outlook.com.tr</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              <a href="mailto:yusufcagan@outlook.com.tr">
+                yusufcagan@outlook.com.tr
+              </a>
+            </p>
           </div>
         </div>
       </div>
