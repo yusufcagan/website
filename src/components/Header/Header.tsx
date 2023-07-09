@@ -3,7 +3,7 @@ import { MdDarkMode, MdMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState<boolean>(true);
 
   return (
     <header className="bg-zinc-100 w-full h-[8s0px] leading-[80px] flex items-center">
@@ -81,7 +81,7 @@ export default function Header() {
                     <Link
                       className="bg-white shadow-lg border-spacing-3 text-smallTextColor font-[500] rounded-[9px] 
                   py-2 px-2 hover:bg-gray-200 duration-500"
-                      to="/home"
+                      to="/"
                     >
                       Home
                     </Link>

@@ -3,14 +3,15 @@ import { project } from "../../data/data";
 import { BiLinkExternal } from "react-icons/bi";
 
 export default function Project() {
-  interface ProjectType {
+  
+  type ProjectType = {
     data: {
       name: string;
       description: string;
       image: string;
       link: string;
     };
-  }
+  };
 
   const ProjectCard: React.FC<ProjectType> = ({ data }) => {
     return (
